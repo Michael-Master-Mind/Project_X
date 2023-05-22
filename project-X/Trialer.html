@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trialer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap" 
+          rel="stylesheet">
+    <title>Trialer</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container"><h1 class="logo">PLEX</h1></div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Seires</li>
+                    <li class="menu-list-item">Sport</li>
+                    <li class="menu-list-item">Plex Kids</li>
+                    <li class="menu-list-item">Plan</li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <button class="reg">Register</button>
+                <button class="sign-in">Sign in</button>
+            </div>
+            
+        </div>
+    </div>
+    <div class="film-trialer">
+        <div class="film-trialer-container">
+            <div class="film-trialer-show">
+                <!-- <img class="film-title" src="img/f-t-1.png" alt="">
+                <p class="trailer-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo dolor
+                    deserunt nam assumenda ipsa eligendi dolore, ipsum id fugiat quo enim impedit, laboriosam omnis
+                    minima voluptatibus incidunt. Accusamus, provident.</p>
+                <button class="trailer-button">WATCH</button> -->
+                <video  height="100%" width="100%" loop autoplay="autoplay" id="autoplay">
+                    <source src="Avengers.mp4" type="video/mp4">
+                </video>
+                <!-- <script>
+                    window.onload=function(){
+                        document.getElementById("autoplay").play();
+                    }
+                </script> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-clean">
+        <h1 class="logo-1">PLEX</h1>
+        <footer>
+            <div class="footer-container">
+                <div class="row justify-content-center">
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>COMPANY</h3>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>SUPPORT</h3>
+                        <ul>
+                            <li><a href="#">Contact Support</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Activate Your Device</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-md-3 item">
+                        <h3>PARTNERS</h3>
+                        <ul>
+                            <li><a href="#">Partner with Us</a></li>
+                            <li><a href="#">Advertise with us</a></li>
+                            <li><a href="#">Benefits</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 item social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <p class="copyright">Plex.com © 2023</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

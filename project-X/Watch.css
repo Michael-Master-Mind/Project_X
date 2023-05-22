@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #181818;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: black;
+    color: white;
+    position: relative;
+    
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+}
+.logo-container{
+    flex: 1;
+}
+.logo{
+    font-size: 30px;
+    color: orangered;
+}
+.menu-container{
+    flex: 6;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+.menu-list-item{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.menu-list-item:hover{
+    color: orangered;
+}
+.menu-list-item.active{
+    font-weight:bolder;
+    color: orangered;
+}
+.profile-container{
+    flex: 2;
+    display: flexbox;
+    padding-left: 10%;
+}
+/* .profile-pictuer{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+} */
+.reg{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    padding: 7px;
+    width: 120px;
+    border: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.reg:hover{
+    background-color: orangered;
+    color: rgb(255, 255, 255);
+    
+}
+.sign-in{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    padding: 7px;
+    width: 120px;
+    border: 10px;
+    border-radius: 50px;
+    color: orangered;
+    background-color: black;
+    cursor: pointer;
+}
+.sign-in:hover{
+    color: white;
+}
+.sidebar{
+    width: 50px;
+    height: 1000px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+.sidebar{
+    width: 50px;
+    height: 1000px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+} 
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.left-menu-icon:hover{
+    color: orangered;
+}
+.search-bar{
+    margin-left: 350px;
+    margin-top: 30px;
+}
+.search-in{
+    width: 800px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: rgb(244, 114, 67);
+}
+.search-container{
+    padding-top: 15px;
+    padding-left: 30px;
+}
+.search-input{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    font-size: 17px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 700px;
+    height: 10px;
+}
+.search-btn{
+    align-items: left;
+}
+.film-title{
+    height: 5vh;
+    margin-top: 40px;
+    margin-left: 93px;
+    margin-right: 35px;
+}
+.film-title-path{
+    color: #f43d14;
+}
+.movie{
+    margin-top: 10px;
+    margin-left: 90px;
+    margin-right: 40px;
+}
+.watch-movie{
+    height: 100vh;
+    background-color: tomato;
+}
+.frame-1{
+    width: 193vh;
+    height: 100vh;
+}
+.info{
+    height: 70vh;
+    background-color: #363434aa;
+    margin-top: 60px;
+    margin-left: 90px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    position: relative;
+}
+info-container-right{
+    padding-left: 210px;
+    padding-right: 0;
+}
+.heading-name{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 10 0 15px;
+    padding-top: 30px;
+    padding-left: 320px;
+    color: #fff;
+    font-weight: 300;
+}
+.film-desc{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 10 0 15px;
+    padding-top: 30px;
+    padding-left: 320px;
+    color: #fff;
+    font-weight: 300;
+}
+.info-list{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 10 0 15px;
+    padding-top: 30px;
+    padding-left: 320px;
+    color: #fff;
+    font-weight: 300;
+}
+.poster{
+    width: 250px;
+    height: 350px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: blue;
+    position: absolute;
+}
+.film-poster{
+    width: 250px;
+    height: 350px;
+    object-fit:cover;
+    border-radius: 10px;
+    
+}
+.related-movies{
+    height: 120vh;
+    background-color: #363434aa;
+    margin-top: 60px;
+    margin-left: 90px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.related-film{
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.related-film-item-img{
+    width: 200px;
+    height: 290px;
+    object-fit:cover;
+    margin-top: 30px;
+    margin-left: 18px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.related-film-item:hover .play {
+    transition: all 0.7s ease-in-out;
+    opacity: 1;
+  }
+.related-film-item:hover .play-2 {
+    transition: all 0.7s ease-in-out;
+    opacity: 1;
+  }
+.related-film-item-title {
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fcfafa;
+  }
+  .play{
+    position: absolute;
+    margin-left: 90px;
+    bottom: 630px;
+    font-size: 60px;
+    color: #ffffff;
+    opacity: 0;
+  }
+  .play-2{
+    position: absolute;
+    margin-left: 90px;
+    bottom: 250px;
+    font-size: 60px;
+    color: #ffffff;
+    opacity: 0;
+  }
+
+  /* .related-film-item-button {
+    
+    padding: 10px;
+    background-color: #ff3300e7;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 360px;
+    left: 50px;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 40px;
+    width: 130px;
+    border: 10px;
+    border-radius: 10px;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .related-movies{
+    height: 90vh;
+    background-color: #363434aa;
+    margin-top: 60px;
+    margin-left: 90px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.related-film-item{
+    margin-right: 30px;
+    position: relative;
+    margin-top: 20px;
+}
+.related-film-item-img{
+    width: 200px;
+    height: 290px;
+    object-fit:cover;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+.related-film-item-title {
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    padding-left: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fcfafa;
+  }
+
+  .related-film-item-button {
+    padding: 10px;
+    background-color: #ff3300e7;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 70px;
+    left: 60px;
+    font-size: 18px;
+    font-weight: bolder;
+    height: 40px;
+    width: 130px;
+    border: 10px;
+    border-radius: 10px;
+  } */
+.logo-1{
+    color:rgb(248, 246, 245);
+}
+.footer-clean {
+    padding:50px;
+    padding-left: 200px;
+    background-color:#ef603f;
+    color:#3b0808;
+    
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:19px;
+    font-weight:bold;
+    font-size:24px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:17px;
+    margin-bottom:0;
+    
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    color: rgb(0, 0, 0);
+    opacity:1;
+  }
+  .footer-clean .item{
+    display:inline-block;
+    padding-left: 150px;
+  }
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:21px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #fcfafa;
+    margin-left:5px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    color: #000000;
+    opacity:0.9;
+  }
+  .footer-clean .item.item.social > p{
+    margin-top: 20px;
+    text-align: center;
+  }

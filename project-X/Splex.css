@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    border: none;
+    background: rgb(1, 52, 25);
+    color: white;
+    position: relative;
+}
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    cursor: pointer;
+}
+.logo-container{
+    flex: 1;
+}
+.logo{
+    font-size: 30px;
+    color: rgb(17, 201, 39);
+}
+.menu-container{
+    flex: 6;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+.menu-list-item{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.menu-list-item:hover{
+    color: rgb(17, 201, 39);
+}
+.menu-list-item.active{
+    font-weight:bolder;
+    color: rgb(17, 201, 39);
+}
+.profile-container{
+    flex: 2;
+    display: flexbox;
+    padding-left: 10%;
+}
+/* .profile-pictuer{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+} */
+.reg{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    padding: 7px;
+    width: 120px;
+    border: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.reg:hover{
+    background-color: rgb(17, 201, 39);
+    color: rgb(255, 255, 255);
+    
+}
+.sign-in{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    padding: 7px;
+    width: 120px;
+    border: 10px;
+    border-radius: 50px;
+    color: rgb(17, 201, 39);
+    background-color: black;
+    cursor: pointer;
+}
+.sign-in:hover{
+    color: white;
+}
+.featuerd-movie{
+    padding-left: 80px;
+}
+.featuerd-choose{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    list-style: none;
+    padding-left: 200px;
+}
+.fea-list-item{
+    margin-right: 30px;
+    margin-top: 80px;
+    padding-left: 130px;
+    cursor: pointer;
+}
+/* .TabButtons__activeBar {
+    display: block;
+    height: 7px;
+    background: #fff;
+    position: absolute;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    transform: scaleX(0);
+    margin-top: 13px;
+    z-index: 2;
+}
+.TabButtons__tab {
+    cursor: pointer;
+    text-transform: uppercase;
+    color: hsla(0,0%,100%,.4);
+    display: inline-block;
+    margin-left: 13px;
+    margin-right: 13px;
+    background: none;
+    border: none;
+    padding: 0;
+} */
+
+  .featured-desc {
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    width: 700px;
+    color: lightgray;
+    padding-left: 400px;
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+  }
+.logo-wall-container{
+    margin-top: 30px;
+    padding-left: 90px;
+    align-items: center;
+}
+.PR{
+    width:70px;
+    height:65px;
+    margin: 4.5px;
+}
+.lal{
+    width:48px;
+    height:60px;
+    margin-left: 16px;
+    margin-top: 8px;
+}
+.bundes{
+    width:58px;
+    height:60px;
+    margin-left: 12px;
+    margin-top: 8px;
+}
+.sira{
+    width:45px;
+    height:58px;
+    margin-left: 17px;
+    margin-top: 6px;
+}
+.L-1{
+    width:55px;
+    height:63px;
+    margin-left: 12px;
+    margin-top: 7px;
+}
+.champ{
+    width:60px;
+    height:63px;
+    margin-left: 12px;
+    margin-top: 6px;
+}
+.europa{
+    width:55px;
+    height:63px;
+    margin-left: 12px;
+    margin-top: 6px;
+}
+.logo-wall-1{
+    padding-top: 50px;
+    padding-left: 400px;
+    display: inline-block;
+}
+.logo-wall-1 .circule{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+}
+.logo-wall-2{
+    padding-top: 50px;
+    padding-left: 100px;
+    display: inline-block;
+}
+.logo-wall-2 .circule{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+}
+.logo-wall-3{
+    padding-top: 50px;
+    padding-left: 100px;
+    display: inline-block;
+}
+.logo-wall-3 .circule{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+}
+.logo-wall-4{
+    padding-top: 50px;
+    padding-left: 100px;
+    display: inline-block;
+}
+.logo-wall-4 .circule{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+}
+.logo-wall-5{
+    padding-top: 50px;
+    padding-left: 100px;
+    display: inline-block;
+}
+.logo-wall-5 .circule{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+}
+.logo-wall-c-1{
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-left: 545px;
+    display: inline-block;
+}
+.logo-wall-c-1 .circule{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+}
+.logo-wall-c-2{
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-left: 105px;
+    display: inline-block;
+}
+.logo-wall-c-2 .circule{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+}
+.main{
+    background-color: #181818;
+    min-height: calc(200vh - 50px);
+    color: white;
+}
+.content-main{
+    margin-left: 50px;
+}
+.featuerd-sport{
+    height: 100vh;
+    background-color: tomato;
+    background-image: linear-gradient(to bottom, rgba(1, 44, 22, 0.582), rgba(2, 61, 39, 0.642)),url('s-l1600.jpg');
+}
+.featuerd-fixtuer{
+    width: 211vh;
+    height: 30vh;
+    background-color: rgb(28, 28, 28);
+    position: relative;
+}
+.fixtuer-container{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0px;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 120px;
+}
+.fix-break{
+    box-sizing: border-box;
+    margin: 0px;
+    flex-direction: row;
+    background-color: rgb(76, 175, 80);
+    height: 1px;
+    width: 75px;
+    flex: 1 1 0%;
+}
+.soccer-stream {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.167;
+    padding: 0px 40px;
+}
+.fix-list{
+    display: flex;
+    padding-left: 75vh;
+    font-size: 24px;
+    padding-top: 40px;
+    list-style: none;
+}
+.fix-list-item{
+    margin-right: 70px;
+    cursor: pointer;
+}
+.fix-list-item:hover{
+    color: rgb(17, 201, 39);
+}
+.fix-list-item.active{
+    font-weight:bolder;
+    color: rgb(17, 201, 39);
+}
+.main-container_t{
+    width: 211vh;
+    height: 200vh;
+    background-color: rgb(37, 37, 37);
+    position: relative;
+}
+.select-wrapper{
+    padding-top: 50px;
+    padding-left: 250px;
+}
+.select{
+    width: 80%;
+    height: 70px;
+    border-radius: 10px;
+    background-color: #0c0c0c;
+}
+.select_item{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: inline;
+    position: relative;
+}
+.select__trigger{
+    padding-top: 10px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+.drop{
+    position: absolute;
+    font-size: 34px;
+    padding-left: 860px;
+    cursor: pointer;
+}
+.custom-options{
+    width: 80%;
+    height: 70px;
+}
+.custom-options > div{
+    border: 2px solid rgb(191, 191, 191);
+    border-left-style: none;
+    border-right-style: none;
+    background-color: #181818;
+}
+
+.list_1,.list_2,.list_3{
+    height: 90px;
+}
+.list_name{
+    width: 360px;
+    height: 90px;
+    display: flex;
+}
+.vs{
+    width: 200px;
+    height: 90px;
+    margin-left: 360px;
+    position: absolute;
+}
+.list_name_{
+    width: 360px;
+    height: 90px;
+    padding-left: 100px;
+    position: absolute;
+    margin-left: 560px;
+}
+.club_name{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 40px;
+}
+.club_logo{
+    position: relative;
+    padding-left: 5px;
+    left: 30px;
+}
+.time{
+    font-size: 24px;
+    padding-top: 30px;
+    padding-left: 90px;
+}
+.club_name_{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 70px;
+}
+.club_logo_{
+    position: absolute;
+    width: 140px;
+    height: 80px;
+    left: 0px;
+    display: flex;
+
+}
+.select-wrapper_{
+    margin-top: 250px;
+    padding-top: 50px;
+    padding-left: 250px;
+}
+.select-wrapper_x{
+    margin-top: 250px;
+    padding-top: 50px;
+    padding-left: 250px;
+}
+
+
+/* .dropdown-open{
+    animation: open 0.3s ease-in-out forwards;
+} 
+ @keyframes open{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+        visibility: visible;
+    }
+}
+.dropdown-close{
+    animation: close 0.3s ease-in-out forwards;
+}
+@keyframes close{
+    0%{
+        transform: scaleY(1);
+        
+    }
+    100%{
+        transform: scaleY(0);
+        
+    }
+}
+.sl{
+    padding-top: 250px;
+} */
+
+
+
+
+
+
+logo-3{
+    color:rgb(255, 255, 255);
+}
+.footer-clean {
+    padding:50px;
+    padding-left: 200px;
+    background-color:rgba(17, 201, 39, 0.623);
+    color:#3b0808;
+    
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:19px;
+    font-weight:bold;
+    font-size:24px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:17px;
+    margin-bottom:0;
+    
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    color: rgb(0, 0, 0);
+    opacity:1;
+  }
+  .footer-clean .item{
+    display:inline-block;
+    padding-left: 150px;
+  }
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:21px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ffffff;
+    margin-left:5px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    color: #000000;
+    opacity:0.9;
+  }
+  .footer-clean .item.item.social > p{
+    margin-top: 20px;
+    text-align: center;
+  }
