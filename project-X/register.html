@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap" 
           rel="stylesheet">
-    <title>Join</title>
+    <title>Register</title>
 </head>
 <body>
-    
     <div class="nav">
         <div class="nav-container">
             <div class="logo-container">
@@ -21,7 +20,6 @@
                 <h2 class="sgn">SIGN IN</h2>
             </div>
         </div>
-    </div>
     </div>
     <div class="register">
         <div class="register-container">
@@ -37,42 +35,62 @@
                 </div>
                 <div class="Yrpmo"></div>
                 <h2 class="via">Register via email</h2>
-                <form action="" method="get" class="form">
-                    <div class="Fname">
-                        <input id="text-input-firstName" aria-describedby="error-text-input-firstName" name="firstName" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
-                        <label for="text-input-firstName" class="web-text-input__label">First Name</label>
+                <div id="error"></div>
+                <form action="register.php" method="post" class="form" id="SignUpForm">
+                    <div class="input-control">
+                       <div class="Fname">
+                            <input id="text-input-firstName" aria-describedby="error-text-input-firstName" name="firstName" class="web-text-input__input" maxlength="60" autocomplete="given-name">
+                            <label for="text-input-firstName" class="web-text-input__label">First Name</label>
+                        </div>
+                        <div id="error"></div> 
                     </div>
-                    <div class="Lname">
-                        <input id="text-input-LastName" aria-describedby="error-text-input-firstName" name="firstName" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
-                        <label for="text-input-LastName" class="web-text-input__label">Last Name</label>
+                    <div class="input-control">
+                        <div class="Lname">
+                            <input id="text-input-LastName" aria-describedby="error-text-input-firstName" name="lastName" class="web-text-input__input" maxlength="60" autocomplete="given-name">
+                            <label for="text-input-LastName" class="web-text-input__label">Last Name</label>
+                        </div>
+                        <div id="error"></div>
                     </div>
-                    <div class="Email">
-                        <input id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="firstName" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
-                        <label for="text-input-EmailName" class="web-text-input__label">Email</label>
+                    <div class="input-control">
+                       <div class="Email">
+                            <input type="email" id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="email" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
+                            <label for="text-input-EmailName" class="web-text-input__label">Email</label>
+                        </div> 
+                        <div id="error"></div>
                     </div>
-                    <div class="password">
-                        <input id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="firstName" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
-                        <label for="text-input-EmailName" class="web-text-input__label">Password</label>
+                    <div class="input-control">
+                       <div class="password">
+                            <input type="password" id="text-input-Password" aria-describedby="error-text-input-firstName" name="password" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
+                            <label for="text-input-Password" class="web-text-input__label">Password</label>
+                        </div> 
+                        <div id="error"></div>
                     </div>
-                    <div class="password">
-                        <input id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="firstName" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
-                        <label for="text-input-EmailName" class="web-text-input__label">Conform Password</label>
+                    <div class="input-control">
+                       <div class="password2">
+                            <input type="password" id="text-input-confirmPassword" aria-describedby="error-text-input-firstName" name="Confirm" class="web-text-input__input" maxlength="60" autocomplete="given-name">
+                            <label for="text-input-confirmPassword" class="web-text-input__label">Confirm Password</label>
+                        </div> 
+                        <div id="error"></div>
                     </div>
-                    <div class="date">
-                        <input id="text-input-EmailName" type="date" name="firstName" class="web-text-input__input" min="2023-02-05" max="2023-03-05" value="">
-                        <label for="text-input-EmailName"  class="web-text-input__label">Date</label>
-                        <!-- <label for="date">Date</label></td>
-                        <input type="date" name="date" id="date" min="2023-02-05" max="2023-03-05"></td> -->
-                        
+                    <div class="input-control">
+                        <div class="date">
+                            <input id="text-input-Date" type="date" name="date" class="web-text-input__input">
+                            <label for="text-input-EmailName"  class="web-text-input__label">Date</label>
+                            <!-- <label for="date">Date</label></td>
+                            <input type="date" name="date" id="date" min="2023-02-05" max="2023-03-05"></td> -->
+                        </div>
+                        <div id="error"></div>
                     </div>
-                    <div class="gender">
-                        <input type="radio" name="gender" id="male">
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="female">
-                        <label for="female">Female</label>
-                    </div>
+                       <div class="gender">
+                            <input type="radio" name="gender" id="male" value="M">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="female" value="F">
+                            <label for="female">Female</label>
+                        </div> 
+                        <div id="error"></div>
+                    
                     <div class="submit">
-                        <button class="submit-container">Next</button>
+                        <button class="submit-container"  value="send" name="send">Next</button>
                     </div>
                 </form>
             </div>
@@ -121,3 +139,4 @@
     </div>
 </body>
 </html>
+<script src="validation.js"></script>

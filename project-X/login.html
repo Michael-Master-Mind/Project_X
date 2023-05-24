@@ -36,17 +36,24 @@
                 </div>
                 <div class="Yrpmo"></div>
                 <h2 class="via">Sign in via Email</h2>
-                <form action="" method="get" class="form">
-                    <div class="Email">
-                        <input id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="firstName" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
-                        <label for="text-input-EmailName" class="web-text-input__label">Email</label>
+                <form action="login.php" method="post" class="form" id="LoginForm">
+                    <div class="input-control">
+                        <div class="Email">
+                            <input type="email" id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="email" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
+                            <label for="text-input-EmailName" class="web-text-input__label">Email</label>
+                        </div>
+                        <div id="error"></div>
                     </div>
-                    <div class="password">
-                        <input id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="firstName" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
-                        <label for="text-input-EmailName" class="web-text-input__label">Password</label>
+                    <div class="input-control">
+                        <div class="password">
+                            <input type="password" id="text-input-Password" aria-describedby="error-text-input-firstName" name="password" class="web-text-input__input" maxlength="60" autocomplete="given-name" value="">
+                            <label for="text-input-Password" class="web-text-input__label">Password</label>
+                        </div>
+                        <div id="error"></div>
                     </div>
+                    
                     <div class="submit">
-                        <button class="submit-container">LOGIN</button>
+                        <button class="submit-container"  value="send" name="send">LOGIN</button>
                     </div>
                 </form>
             </div>
@@ -95,3 +102,4 @@
     </div>
 </body>
 </html>
+<script src="validationLogin.js"></script>
