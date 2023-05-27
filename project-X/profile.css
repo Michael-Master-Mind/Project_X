@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.profile-container{
+    width: 35%;
+    height: 100vh;
+    background-color: green;
+    position: absolute;
+    display: flex;
+}
+.profile-container_{
+    width: 65%;
+    height: 100vh;
+    background-color: blueviolet;
+    position: absolute;
+    margin-left: 537px;
+}
+.profile_img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    margin-top: 50px;
+    margin-left: 140px;
+}
+.Plus{
+    font-size: 34px;
+    margin-top: 160px;
+    color: whitesmoke;
+}
+.P-name{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 130px;
+    color: whitesmoke;
+}

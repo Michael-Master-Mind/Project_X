@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to top, rgb(2, 2, 2),#0045b4);
+}
+.plan-container{
+    margin-left: 190px;
+    margin-top: 50px;
+    
+}
+.plan-tile_1{
+    width: 50vh;
+    height: 100vh;
+    background-color:rgb(244, 225, 225);
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+}
+.plan-tile_2{
+    width: 50vh;
+    height: 100vh;
+    margin-left: 380px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 10px;
+    
+} 
+ .plan-tile_3{
+    width: 50vh;
+    height: 100vh;
+    margin-left: 760px;
+    background-color: aquamarine;
+    position: absolute;
+    border-radius: 10px;
+}
+.plan_price{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 50px;
+    font-size: 33px;
+    color: whitesmoke;
+}
+.plan_price-{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 70px;
+    font-size: 33px;
+}
+.plan_price_{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    padding-left: 60px;
+    padding-top: 70px;
+    font-size: 33px;
+    
+}
+.plan-desc{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+}
+.plan-desc__{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.plan-desc-{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 80px;
+    text-align: center;
+    color: whitesmoke;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.plex{
+    padding-left: 50px;
+    padding-top: 10px;
+    letter-spacing: 10px;
+    color: rgb(255, 255, 255);
+}
+.basic{
+    background-color: aqua;
+    padding-left: 130px;
+    padding-top: 5px;
+    border-radius: 5px ;
+}
+.get{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 90px;
+    margin-left: 40px;
+    width: 270px;
+    height: 60px;
+    border-radius: 50px;
+    border: 3px solid rgb(245, 70, 6);
+    background-color: #000000;
+    color: whitesmoke;
+    cursor: pointer;
+}
+.get-{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 180px;
+    margin-left: 40px;
+    width: 270px;
+    height: 60px;
+    border-radius: 50px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+.get_{
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 130px;
+    margin-left: 40px;
+    width: 270px;
+    height: 60px;
+    border-radius: 50px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+
+
+
+logo-3{
+    color:rgb(255, 255, 255);
+}
+.footer-clean {
+    padding:50px;
+    padding-left: 200px;
+    margin-top: 50px;
+    background-color:rgb(238, 241, 244);
+    color:#3b0808;
+    position: relative;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:19px;
+    font-weight:bold;
+    font-size:24px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:17px;
+    margin-bottom:0;
+    
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    color: rgb(0, 0, 0);
+    opacity:1;
+  }
+  .footer-clean .item{
+    display:inline-block;
+    padding-left: 150px;
+  }
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:21px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ffffff;
+    margin-left:5px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    color: #000000;
+    opacity:0.9;
+  }
+  .footer-clean .item.item.social > p{
+    margin-top: 20px;
+    text-align: center;
+  }

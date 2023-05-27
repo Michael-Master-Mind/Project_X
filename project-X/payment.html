@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap" 
+          rel="stylesheet">
+    <title>Payment</title>
+</head>
+<body>
+    <h1 class="plex">PLEX</h1>
+    <div class="register">
+        <div class="register-container">
+            <div class="register-container-form">
+                <h1 class="reg">Let's get you set up!</h1>
+                <div class="Yrpmo"></div>
+                <h2 class="via">Make a payment</h2>
+                <div id="error"></div>
+                <form action="register.php" method="post" class="form" id="SignUpForm">
+                    <div class="input-control">
+                       <div class="fullname">
+                            <input id="text-input-fullName" aria-describedby="error-text-input-fullName" name="fullName" class="web-text-input__input" maxlength="60" autocomplete="given-name">
+                            <label for="text-input-fullName" class="web-text-input__label">Full Name</label>
+                        </div>
+                        <div id="error"></div> 
+                    </div>
+                    <div class="input-control">
+                       <div class="Email">
+                            <input type="email" id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="email" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
+                            <label for="text-input-EmailName" class="web-text-input__label">Email</label>
+                        </div> 
+                        <div id="error"></div>
+                    </div>
+                    <div class="input-control">
+                       <div class="password">
+                            <input type="password" id="text-input-Password" aria-describedby="error-text-input-firstName" name="password" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
+                            <label for="text-input-Password" class="web-text-input__label">Card Number</label>
+                        </div> 
+                        <div id="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <div class="date">
+                            <input id="text-input-Date" type="date" name="date" class="web-text-input__input">
+                            <label for="text-input-EmailName"  class="web-text-input__label">Expired Date</label>
+                            
+                        </div>
+                        <div id="error"></div>
+                    </div>
+                    <div class="card">
+                        <label for="text-input-EmailName"  class="web-text-input__label">Card Type</label>
+                        <td>
+                            <select name="country" class="card_">
+                                <option class="card_-" value="Ethiopia"></option>
+                                <option class="card_-" value="Kenya">Master Card</option>
+                                <option class="card_-" value="zambia">Visa Card</option>
+                                <option class="card_-" value="egypt">American Express</option>
+                            </select>
+                        </td>
+                    </div>
+                    <div class="input-control">
+                        <div class="Email">
+                             <input type="email" id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="email" placeholder="$0" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
+                             <label for="text-input-EmailName" class="web-text-input__label">Chosen Plan Total</label>
+                         </div> 
+                         <div id="error"></div>
+                     </div>
+                    <div class="cardimg">
+                        <img src="vid/visa-and-mastercard-logo-26.png" alt="" class="card_img">
+                    </div>
+                    
+                    <div class="submit">
+                        <button class="submit-container"  value="send" name="send">PAY NOW</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
