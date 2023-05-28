@@ -19,7 +19,7 @@
                 <div class="Yrpmo"></div>
                 <h2 class="via">Make a payment</h2>
                 <div id="error"></div>
-                <form action="register.php" method="post" class="form" id="SignUpForm">
+                <form action="payment.php" method="post" class="form" id="paymentForm">
                     <div class="input-control">
                        <div class="fullname">
                             <input id="text-input-fullName" aria-describedby="error-text-input-fullName" name="fullName" class="web-text-input__input" maxlength="60" autocomplete="given-name">
@@ -35,8 +35,8 @@
                         <div id="error"></div>
                     </div>
                     <div class="input-control">
-                       <div class="password">
-                            <input type="password" id="text-input-Password" aria-describedby="error-text-input-firstName" name="password" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
+                       <div class="cardNumber">
+                            <input type="text" id="text-input-cardNumber" aria-describedby="error-text-input-firstName" name="cardNumber" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
                             <label for="text-input-Password" class="web-text-input__label">Card Number</label>
                         </div> 
                         <div id="error"></div>
@@ -44,33 +44,35 @@
                     <div class="input-control">
                         <div class="date">
                             <input id="text-input-Date" type="date" name="date" class="web-text-input__input">
-                            <label for="text-input-EmailName"  class="web-text-input__label">Expired Date</label>
-                            
+                            <label for="text-input-date"  class="web-text-input__label">Expired Date</label>            
                         </div>
                         <div id="error"></div>
                     </div>
-                    <div class="card">
-                        <label for="text-input-EmailName"  class="web-text-input__label">Card Type</label>
-                        <td>
-                            <select name="country" class="card_">
-                                <option class="card_-" value="Ethiopia"></option>
-                                <option class="card_-" value="Kenya">Master Card</option>
-                                <option class="card_-" value="zambia">Visa Card</option>
-                                <option class="card_-" value="egypt">American Express</option>
-                            </select>
-                        </td>
+                    <div class="input-control">
+                        <div class="card">
+                            <label for="text-input-card"  class="web-text-input__label">Card Type</label>
+                            <td>
+                                <select name="card" class="card_" id="cardtype">
+                                    <option class="card_-" value=""></option>
+                                    <option class="card_-" value="Master Card">Master Card</option>
+                                    <option class="card_-" value="Visa Card">Visa Card</option>
+                                    <option class="card_-" value="American Express">American Express</option>
+                                </select>
+                            </td>
+                        </div>
+                        <div id="error"></div>
                     </div>
                     <div class="input-control">
-                        <div class="Email">
-                             <input type="email" id="text-input-EmailName" aria-describedby="error-text-input-firstName" name="email" placeholder="$0" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
-                             <label for="text-input-EmailName" class="web-text-input__label">Chosen Plan Total</label>
+                        <div class="chosenPlan">
+                             <input type="text" id="text-input-chosenPlan" aria-describedby="error-text-input-firstName" name="chosenPlan" placeholder="$0" class="web-text-input__input" maxlength="60" autocomplete="given-name" >
+                             <label for="text-input-chosenPlan" class="web-text-input__label">Chosen Plan Total</label>
                          </div> 
                          <div id="error"></div>
                      </div>
                     <div class="cardimg">
-                        <img src="vid/visa-and-mastercard-logo-26.png" alt="" class="card_img">
+                        <!-- <img src="vid/visa-and-mastercard-logo-26.png" alt="" class="card_img"> -->
                     </div>
-                    
+                
                     <div class="submit">
                         <button class="submit-container"  value="send" name="send">PAY NOW</button>
                     </div>
@@ -83,3 +85,4 @@
     
 </body>
 </html>
+<script src="payment.js"></script>

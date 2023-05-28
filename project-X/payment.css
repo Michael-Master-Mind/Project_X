@@ -59,7 +59,7 @@ body{
     left: 16px;
     color: #ffffff;
 }
-.fullname,.Email ,.password,.date{
+.fullname,.Email ,.cardNumber,.date,.chosenPlan{
     position: relative;
     height: 76px;
     max-height: 76px;
@@ -136,3 +136,9 @@ body{
     padding-left: 110px;
     padding-top: 90px;
 }
+  .input-control #error {
+    color: red;
+    font-size: 9px;
+    height:13px;
+    padding-left: 30px;
+  }

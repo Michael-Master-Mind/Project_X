@@ -12,18 +12,27 @@
                 $fname=$row['FirstName'];
                 $lname=$row['LastName'];
                 echo'
+                        <script>
+                            alert("'.$fname.' '.$lname.' Welcome!!!");
+                            
+                            var  fullName = ["'.$fname.'", "'.$lname.'"];
+                            sessionStorage.setItem("fullName", JSON.stringify(fullName));
+                            location.href = "Plex.html";
+                        </script>
+                    ';
+                    include('Plex.html');
+                
+                    
+                }
+
+                else{
+                    echo'
                     <script>
-                        alert("'.$fname.' '.$lname.' Welcome!!!");
+                        alert("Email or Password is incorrect")
                     </script>
-                ';
-        }
-        else{
-            echo'
-                <script>
-                    alert("This account does not exist!!!");
-                </script>
-            '; 
-            include('login.html');
+                    ';
+                    include('login.html');
+              
         }
     }
 ?>
