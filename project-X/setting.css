@@ -70,22 +70,13 @@ body{
     background-color: brown;
 }
 
-
 .profile_container_{
     width: 72%;
     height: 110vh;
     background-color: brown;
-    position: relative;
+    position: absolute;
     margin-left: 440px;
-}
-.infoo{
-    font-family: 'Sen', sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    color: #fcfafa;
+    display: none;
 }
 .web-text-input__label {
     font-size: 16px;
@@ -96,7 +87,6 @@ body{
     color: #ffffff;
 }
 .Fname ,.Lname ,.Email ,.old-password,.New-password,.date{
-    
     position: relative;
     height: 76px;
     max-height: 76px;
@@ -118,8 +108,9 @@ body{
     color: #fcfafa;
 }
 .submit{
-    padding-left: 700px;
+    padding-left: 650px;
     padding-top: 50px;
+    
 }
 .submit-container{
     font-family: 'Sen', sans-serif;
@@ -143,7 +134,7 @@ body{
     margin-left: 440px;
     padding-left: 30px;
     padding-top: 40px;
-    visibility: hidden;
+    display: none;
 }
 .plan_tile_1{
     width: 45vh;
@@ -303,7 +294,6 @@ body{
     margin-left: 440px;
     padding-left: 30px;
     padding-top: 40px;
-    visibility: hidden;
 }
 .plan_tile_1_{
     width: 45vh;
@@ -511,8 +501,8 @@ body{
         background-color: rgb(136, 3, 165);
         position: relative;
         margin-left: 0px;
-        margin-top: 1963px;
-        padding-left: 30px;
+        
+        padding-left: 10px;
         padding-top: 40px;
         visibility: visible;
     }
