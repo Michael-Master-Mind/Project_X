@@ -4,6 +4,13 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+.input-control #error {
+    color: red;
+    font-size: 9px;
+    height:13px;
+    padding-left: 30px;
+}
+
 .profile-container{
     width: 29%;
     height: 100vh;
@@ -264,7 +271,7 @@ body{
     background-color: rgb(23, 243, 23);
     cursor: pointer;
 }
-.pro__name{
+#pro__name{
     padding-bottom: 50px;
     font-family: 'Sen', sans-serif;
     font-weight: bold;
@@ -291,9 +298,6 @@ body{
     background-color: rgb(14, 249, 14);
     color:beige;
 }
-
-
-
 
 .profile_container_y{
     width: 72%;

@@ -11,11 +11,12 @@
                 $row=$result->fetch_assoc();
                 $fname=$row['FirstName'];
                 $lname=$row['LastName'];
+                $DoB=$row['DoB'];
                 echo'
                         <script>
                             alert("'.$fname.' '.$lname.' Welcome!!!");
                             
-                            var  fullName = ["'.$fname.'", "'.$lname.'"];
+                            var  fullName = ["'.$fname.'", "'.$lname.'","'.$email.'", "'.$password.'", "'.$DoB.'"];
                             sessionStorage.setItem("fullName", JSON.stringify(fullName));
                             location.href = "Plex.html";
                         </script>

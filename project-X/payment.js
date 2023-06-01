@@ -6,6 +6,11 @@ const date = document.getElementById('text-input-Date')
 const cardType = document.getElementById('cardtype')
 const chosenPlan = document.getElementById('text-input-chosenPlan')
 
+const amount = sessionStorage.getItem("amount")
+console.log(amount)
+
+chosenPlan.value=amount
+
 form.addEventListener('submit',e=>{
     validateInputs();
     if(validateInputs() === false){

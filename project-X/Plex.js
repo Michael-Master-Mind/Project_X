@@ -7,8 +7,9 @@ console.log(fullName[0]+" "+fullName[1])
 
 
 profileName.innerHTML = fullName[0] + " " +fullName[1]
-profileName.style.color="orangered"
+profileName.style.color="orangered";
 if(profileName !== null){
     butn.style.display="none"
 }
-
+// sessionStorage.setItem("fullName", JSON.stringify(fullName));
+// location.href = "profile.html";

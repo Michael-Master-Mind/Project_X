@@ -19,6 +19,6 @@ $conn=new Connect;
             alert(" Payment has been successfully completed!!!");
             </script>
         ';
-        include('plan.html');
+        include('login.html');
     }
 ?>

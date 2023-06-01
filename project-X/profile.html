@@ -19,7 +19,7 @@
                 <i class="fa-solid fa-circle-plus Plus"></i>
             </div>
             <div class="P-name">
-                <h2 class="pro_name">Michael D. Abebe</h2>
+                <h2 id="pro_name">Michael D. Abebe</h2>
                 <!-- <div class="pro-list">
                     <button class="pro_btn">Profile</button>
                     <button class="plan_btn">Plan</button>
@@ -37,7 +37,7 @@
             
         </div>
         <div class="profile_container_">
-            <form action="">
+            <form action="profile.php" method="post"  id="profileForm">
                 <h4 class="infoo">Personal Information</h4>
                     <div class="input-control">
                         <div class="Fname">
@@ -85,8 +85,8 @@
                     </div>
                     
                     <div class="submit">
-                        <button class="submit-container"  value="send" name="send">Edit Info</button>
-                        <button class="submit-container"  value="send" name="send">Submit</button>
+                        <button class="submit-container"  value="update" name="update">Update</button>
+                        <button class="submit-container"  value="delete" name="delete">Delete</button>
                     </div>
                 
                 
@@ -148,3 +148,4 @@
 </body>
 
 </html>
+<script src="profile.js"></script>

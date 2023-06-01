@@ -20,6 +20,6 @@ $conn=new Connect;
             alert("'.$fname.' '.$lname.' has been successfully registered!!!");
             </script>
         ';
-        include('login.html');
+        include('plan.html');
     }
 ?>
