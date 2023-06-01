@@ -19,6 +19,17 @@ email.value=fullName[2]
 password.value=fullName[3]
 date.value=fullName[4]
 
+const tile1 = document.getElementById('plan_tile_1_')
+const tile2 = document.getElementById('plan_tile_2_')
+
+const remove1= document.getElementById('remove_1')
+remove1.addEventListener('click',()=>{
+    tile1.style.display='none'
+})
+const remove2= document.getElementById('remove_2')
+remove2.addEventListener('click',()=>{
+    tile2.style.display='none'
+})
 
 
 
