@@ -21,22 +21,22 @@
             <div class="P-name">
                 <h2 id="pro_name">Michael D. Abebe</h2>
                 <!-- <div class="pro-list">
-                    <button class="pro_btn">Profile</button>
-                    <button class="plan_btn">Plan</button>
-                    <button class="setting_btn">Setting</button>
+                    <button id="pro_btn" class="pro_btn">Profile</button>
+                    <button id="plan_btn" class="plan_btn">Plan</button>
+                    <button id="setting_btn" class="setting_btn">Setting</button>
                 </div> -->
                 <div class="pro-list">
                     <ul>
-                        <li class="pro_btn">Profile</li>
-                        <li class="plan_btn">Plan</li>
-                        <li class="setting_btn">Setting</li>
+                        <li id="pro_btn" class="pro_btn">Profile</li>
+                        <li id="plan_btn" class="plan_btn">Plan</li>
+                        <li id="setting_btn" class="setting_btn">Setting</li>
                     </ul> 
                 </div>
                 
             </div>
             
         </div>
-        <div class="profile_container_">
+        <div class="profile_container_" id="profile_container_">
             <form action="profile.php" method="post"  id="profileForm">
                 <h4 class="infoo">Personal Information</h4>
                     <div class="input-control">
@@ -93,7 +93,7 @@
             </form>
         </div>
     </div>
-    <div class="profile_container_x">
+    <div class="profile_container_x" id="profile_container_x">
         <h2 class="pro__name">CURRENT PLAN</h2>
         <div class="plan_tile_1">
             <div class="plan-containt">
@@ -121,7 +121,7 @@
             </div>
         </div>
     </div>
-    <div class="profile_container_y">
+    <div class="profile_container_y" id="profile_container_y">
         <h2 class="pro__name">MEMBERS</h2>
         <div id="plan_tile_1_" class="plan_tile_1_">
             <img src="img/profile.jpg" alt="" class="member_img">
@@ -135,17 +135,17 @@
             <h4 class="mem_plan">Plex (No Ads)</h4>
             <button id="remove_2" class="mem_btn">Remove</button>
         </div>
-        <div id="tile_3"class="plan_tile_3_">
+        <div id="tile_3_" class="tile_3_">
             <i class="fa-solid fa-circle-plus Plus_"></i>
         </div>
         <div class="line"></div>
         <div class="log_out">
             <i class="fa-solid fa-right-from-bracket logout"></i>
-            <a id="log_out" href="login.html" class="log-out">logout</h3>
+            <a id="log_out" href="login.html" class="log-out">logout</a>
         </div>
     </div>
     <script src="app.js"></script>
+    <script src="profile.js"></script>
 </body>
 
 </html>
-<script src="profile.js"></script>

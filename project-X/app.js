@@ -21,6 +21,28 @@ arrows.forEach((arrow,i)=>{
   });
 })
 
+var pro_btn = document.getElementById('pro_btn');
+var plan_btn = document.getElementById('plan_btn');
+var setting_btn = document.getElementById('setting_btn');
+var profile_container_ = document.getElementById('profile_container_');
+var profile_container_x = document.getElementById('profile_container_x');
+var profile_container_y = document.getElementById('profile_container_y');
+  pro_btn.addEventListener('click', () => {
+    profile_container_.style.display='block';
+    profile_container_x.style.display='none';
+    profile_container_y.style.display='none';
+  });
+  plan_btn.addEventListener('click', () => {
+    profile_container_.style.display='none';
+    profile_container_x.style.display='block';
+    profile_container_y.style.display='none';
+  });
+  setting_btn.addEventListener('click', () => {
+    profile_container_.style.display='none';
+    profile_container_x.style.display='none';
+    profile_container_y.style.display='block';
+  });
+
 // let dropDown=document.getElementsByClassName("custom-options")[0];
 // let isOpen = false;
 

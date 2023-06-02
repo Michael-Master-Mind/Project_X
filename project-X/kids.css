@@ -39,10 +39,14 @@ body{
     margin-right: 30px;
     cursor: pointer;
 }
-.menu-list-item:hover{
+.menu-list a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu-list-item:hover a{
     color: rgb(201, 17, 201);
 }
-.menu-list-item.active{
+.menu-list-item.active a{
     font-weight:bolder;
     color: rgb(156, 21, 156);
 }
@@ -51,61 +55,33 @@ body{
     display: flexbox;
     padding-left: 10%;
 }
-/* .profile-pictuer{
+.profile-container{
+    flex: 3;
+    display: flexbox;
+    padding-left: 10px;
+    
+}
+.profile{
+    display: inline-flex;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 0px;
+}
+.pro-img{
     width: 32px;
     height: 32px;
     border-radius: 50%;
     object-fit: cover;
-} */
-.reg{
-    font-family: 'Sen', sans-serif;
-    font-weight: bold;
-    padding: 7px;
-    width: 120px;
-    border: 10px;
-    border-radius: 50px;
-    cursor: pointer;
+    background-color: white;
 }
-.reg:hover{
-    background-color: rgb(204, 8, 238);
-    color: rgb(255, 255, 255);
-    
+.pro-name{
+    padding-left: 20px;
+    padding-top: 5px;
+        
 }
-.sign-in{
-    font-family: 'Sen', sans-serif;
-    font-weight: bold;
-    padding: 7px;
-    width: 120px;
-    border: 10px;
-    border-radius: 50px;
-    color: rgb(156, 21, 156);
-    background-color: black;
-    cursor: pointer;
-}
-.sign-in:hover{
-    color: white;
-}
-.sidebar{
-    width: 50px;
-    height: 1000px;
-    background-color: rgb(44, 1, 52);
-    position: fixed;
-    top: 0;
-    align-items: center;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 60px;
-} 
-
-.left-menu-icon{
-    color: white;
-    font-size: 20px;
-    margin-bottom: 40px;
-    cursor: pointer;
-}
-.left-menu-icon:hover{
-    color: rgb(103, 5, 131);
+.pro-name a{
+    color: #fcfafa;
+    text-decoration: none;
 }
 .featuerd-movie{
     padding-left: 80px;
@@ -131,18 +107,22 @@ body{
     font-weight: bold;
     cursor: pointer;
   }
+  .featured-button a{
+    color: #fcfafa;
+    text-decoration: none;
+  }
 .main{
     background-color: #20031e;
     min-height: calc(200vh - 50px);
     color: white;
 }
 .content-main{
-    margin-left: 50px;
+    margin-left: 0px;
 }
 .featuerd-movie{
     height: 70vh;
     background-color: tomato;
-    background-image: linear-gradient(to left, rgba(0,0,0,0),#20031eae,#20031e),url('s-l1600.jpg');
+    background-image: linear-gradient(to left, rgba(0,0,0,0),#20031eae,#20031e),url('kids/posterimage2.jpg');
 }
 .movie-list-container{
     padding: 20px;
@@ -204,7 +184,7 @@ body{
     opacity: 0;
     transition: 1s all ease-in-out;
   }
-  .movie-list-item-button {
+  .movie-list-item-button{
     padding: 10px;
     background-color: rgb(156, 21, 156);
     color: white;
@@ -213,7 +193,7 @@ body{
     border: none;
     cursor: pointer;
     position: absolute;
-    bottom: 150px;
+    bottom: 100px;
     left: 50px;
     opacity: 0;
     transition: 1s all ease-in-out;
@@ -223,6 +203,10 @@ body{
     width: 130px;
     border: 10px;
     border-radius: 10px;
+  }
+  .movie-list-item-button a{
+    color: #fcfafa;
+    text-decoration: none;
   }
 .arrow{
     font-size: 120px; 
@@ -305,6 +289,44 @@ body{
     margin-top: 20px;
     text-align: center;
   }
+  .dropdown{
+    visibility: hidden;
+  }
+  .dropbtn {
+    background-color:  rgb(143, 16, 165);
+    color: white;
+    padding: 16px;
+    font-size: 26px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1235px;
+    margin-top: 10px;
+  }
+.drop_down{
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color:  rgba(0, 0, 0, 0.619);
+    width: 130px;
+    text-align: center;
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    margin-left: 1200px;
+    margin-top: 10px;
+    padding-left: 0px;
+    border-radius: 10px;
+}
+.drop_down a {
+    font-family: 'Sen', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+  }
+.drop_down a:hover {background-color:  rgb(204, 8, 238)}
+.dropdown:hover .drop_down {display: block;}
+.dropdown:hover .dropbtn {background-color:  rgb(204, 8, 238)}
 @media(min-width: 469px) and (max-width: 769px){
     .menu-container{
         display: none;
@@ -317,20 +339,28 @@ body{
         padding-left: 18%;
     }
     .reg{
-        padding: 9px;
-        width: 100px;
-        border: 10px;
-        border-radius: 50px;
-        cursor: pointer;
+        display: none;
     }
     .sign-in{
-        padding: 9px;
-        width: 100px;
-        border: 10px;
-        border-radius: 50px;
-        color: orangered;
-        background-color: rgb(0, 0, 0);
-        cursor: pointer;
+        display: none;
+    }
+    .profile{
+        display: inline-flex;
+        position: relative;
+        margin-left: 70px;
+        margin-top: 0px;
+    }
+    .pro-img{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        background-color: white;
+    }
+    .pro-name{
+        padding-left: 20px;
+        padding-top: 5px;
+            
     }
     .sidebar{
         display: none;
@@ -340,9 +370,21 @@ body{
     }
     .featuerd-movie{
         height: 70vh;
-        width: 480px;
+        width: 400px;
         /* object-fit: cover; */
-        background: linear-gradient(to bottom, rgba(0,0,0,0),#151515),url('jw.jpg');
+        background: linear-gradient(to bottom, rgba(0,0,0,0),#151515),url('kids/spider.jpg');
     }
-    
+    .dropdown{
+        visibility: visible;
+    }
+    .dropbtn{
+        margin-left: 340px;
+    }
+    .drop_down {
+        margin-left: 290px;
+    }
+    .footer-clean {
+        padding:50px;
+        padding-left: 60px;
+      }
 }
